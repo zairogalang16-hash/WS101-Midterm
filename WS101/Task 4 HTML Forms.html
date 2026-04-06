@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Lab Exercise 3</title>
+</head>
+<body>
+
+    <h2 style="color:rgb(250, 185, 0)">How can we help?</h2>
+
+<form>
+    <fieldset>
+        <legend style="color:rgb(25, 125, 215)"><b>Request for Proposal</b></legend>
+        
+         <table cellpadding="5">
+            <tr>
+                <td>Your name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+             <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+
+            <tr>
+                <td>Your Business:</td>
+                <td>
+                     <textarea name="business" rows="10" cols="33" placeholder=" Briefly describe your business in this space"> Briefly describe your business in this space
+                     </textarea>
+                </td>
+            </tr>
+
+          <tr>
+                <td valign="top">Company size:</td>
+                <td>
+                    <input type="radio" name="size" value="less than 10">Less than 10<br>
+                    <input type="radio" name="size" value="11 to 50">11 to 50<br>
+                    <input type="radio" name="size" value="50 to 200">50 to 200<br>
+                    <input type="radio" name="size" value="over 200">Over 200
+                </td>
+            </tr>
+
+            <tr>
+                <td>Service:</td>
+                <td>
+                    <input type="checkbox" name="service" value="Brand Identity">
+                    <label>Brand Identity</label>
+                    <input type="checkbox" name="service" value="New Website">
+                    <label>New Website</label>
+                    <input type="checkbox" name="service" value="Web Redesigner">
+                    <label>Web Redesigner</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Timeline:</td>
+                <td>
+                     <select name="timeline">
+                        <option>Immediately</option>
+                        <option>1-2 weeks</option>
+                        <option>3-6 weeks</option>
+                        <option>7 - 2 months</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Send to dev\design</button>
+                </td>
+            </tr>
+        
+        </table>
+    
+    </fieldset>
+</form>
+   
+</body>
+</html>

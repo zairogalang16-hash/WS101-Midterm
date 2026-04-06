@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab Task 6-1</title>
+  <style>
+    [span_2](start_span)/* Styling for the container divs as requested in the lab task[span_2](end_span) */
+    .section-box {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      width: 500px;
+    }
+
+    [span_3](start_span)/* Requirement: Create 2 text boxes and put them on separate lines[span_3](end_span) */
+    .block-input {
+      display: block; [span_4](start_span)/* Forces the element to take a full line[span_4](end_span) */
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+
+    [span_5](start_span)/* Requirement: Paragraph and buttons on the same line[span_5](end_span) */
+    .survey-text {
+      display: inline-block; [span_6](start_span)/* Allows width and side-by-side placement[span_6](end_span) */
+      width: 300px;
+      vertical-align: middle; [span_7](start_span)/* Aligns text and buttons center-wise[span_7](end_span) */
+    }
+
+    .survey-button {
+      display: inline-block; [span_8](start_span)/* Places buttons next to the text[span_8](end_span) */
+      vertical-align: middle;
+      padding: 5px 15px;
+    }
+
+    [span_9](start_span)/* Challenge 8d: Sign up form layout[span_9](end_span) */
+    .signup-half {
+      display: inline-block;
+      width: 45%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .signup-full {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+
+    .signup-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4c6ef5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    [span_10](start_span)/* Challenge 8e: Uber Form[span_10](end_span) */
+    .uber-input {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #f0f0f0;
+      border: none;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+    }
+
+    .uber-btn-black {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+    }
+
+    .uber-btn-gray {
+      display: inline-block;
+      background-color: #eeeeee;
+      padding: 10px 20px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section-box">
+    <input type="text" placeholder="Name" class="block-input">
+    <input type="text" placeholder="Email" class="block-input">
+  </div>
+
+  <div class="section-box">
+    <p class="survey-text">
+      Thanks for chatting with our customer support. Would you like to take our quick survey?
+    </p>
+    <button class="survey-button">Yes</button>
+    <button class="survey-button">No</button>
+  </div>
+
+  
+  <div class="section-box" style="width: 400px;">
+    <input type="text" placeholder="First name" class="signup-half">
+    <input type="text" placeholder="First name" class="signup-half">
+    <input type="text" placeholder="Email" class="signup-full">
+    <button class="signup-button">Sign Up</button>
+  </div>
+
+  
+  <div class="section-box" style="width: 400px;">
+    <h1>Request a ride now</h1>
+    <input type="text" placeholder="Enter pickup location" class="uber-input">
+    <input type="text" placeholder="Enter destination" class="uber-input">
+    <div style="margin-top: 15px;">
+      <button class="uber-btn-black">Request now</button>
+      <button class="uber-btn-gray">Schedule for later</button>
+    </div>
+  </div>
+
+</body>
+</html>
